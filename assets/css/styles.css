@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+body {
+   font-family: 'Inter', sans-serif;
+   background-color: hsl(36, 100%, 98%);
+}
+hr {
+   margin: 0.7rem 0 0.7rem;
+}
+.grid-container {
+   width: 80%;
+   max-width: 850px;
+   margin: 2.5rem auto 0;
+   display: grid;
+   grid-template-rows: (4, 1fr);
+   grid-template-columns: (3, 1fr);
+   grid-template-areas: 
+      "one two"
+      "three three four"
+      "five six four"
+      "seven eight nine"
+   ;
+   column-gap: 1.5rem;
+   row-gap: 1.5rem;
+   /* background-color: aqua; */
+}
+.first {
+   grid-area: one;
+   grid-column-start: 1;
+   grid-column-end: 1;
+   grid-row-start: 1;
+   grid-row-end: 1;
+   font-family: 'Abril Fatface', serif;
+   font-size: 1.5rem;
+   display: flex;
+   justify-content: start;
+   align-items: center;
+}
+.second {
+   grid-area: two;
+   grid-column-start: 2;
+   grid-column-end: 4;
+   grid-row-start: 1;
+   grid-row-end: 1;
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   gap: 1.6rem;
+   font-size: 0.9rem;
+   margin: 0 0 1rem;
+   color: hsl(236, 13%, 42%);
+}
+.third {
+   grid-area: three;
+   grid-row-start: 2;
+   grid-row-end: 2;
+   grid-column-start: 1;
+   grid-column-end: 3;
+}
+.fourth {
+   grid-area: four;
+   grid-row-start: 2;
+   grid-row-end: 4;
+   grid-column-start: 3;
+   grid-column-end: 3;
+   background-color: hsl(240, 100%, 5%);
+   color: hsl(36, 100%, 99%);
+   padding: 1.2rem 1rem;
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+}
+.fifth {
+   grid-area: five;
+   grid-row-start: 3;
+   grid-row-end: 3;
+   grid-column-start: 1;
+   grid-column-end: 2;
+   margin: -1rem 0 0;
+   font-size: 1.2rem;
+   font-weight: 1000;
+   line-height: 2.3rem;
+   padding: 0 1.9rem 0 0;
+   word-spacing: 0.3rem;
+   letter-spacing: 0.04rem;
+   color: hsl(240, 100%, 5%);
+}
+.sixth {
+   grid-area: six;
+   grid-row-start: 3;
+   grid-row-end: 3;
+   grid-column-start: 2;
+   grid-column-end: 3;
+   margin: -1rem 0 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.seventh {
+   grid-area: seven;
+   grid-row-start: 4;
+   grid-row-end: 4;
+   grid-column-start: 1;
+   grid-column-end: 1;
+}
+.eighth {
+   grid-area: eight;
+   grid-row-start: 4;
+   grid-row-end: 4;
+   grid-column-start: 2;
+   grid-column-end: 2;
+}
+.nineth {
+   grid-area: nine;
+   grid-row-start: 4;
+   grid-row-end: 4;
+   grid-column-start: 3;
+   grid-column-end: 3;
+}
+
+
+.new {
+   color: hsl(35, 77%, 62%);
+}
+.newPs {
+   font-size: 0.8rem;
+   color: hsl(233, 8%, 79%);
+}
+.webText {
+   font-size: 0.8rem;
+   color: hsl(236, 13%, 42%);
+}
+.rM {
+   width: 8rem;
+   font-size: 0.6rem;
+   letter-spacing: 0.2rem;
+   padding: 0.5rem 0.7rem;
+   background-color: hsl(5, 85%, 63%);
+   display: inline;
+   text-align: center;
+   color: hsl(36, 100%, 99%);
+   text-transform: uppercase;
+   margin: 0rem 0 1rem;
+}
+.ttContent {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.greyNum {
+   color: hsl(233, 8%, 79%);
+   font-size: 1.4rem;
+}
+.ttHead {
+   color: hsl(240, 100%, 5%);
+   font-weight: 900;
+}
+.ttPara {
+   font-size: 0.73rem;
+   color: hsl(236, 13%, 42%);
+}
+
+
+.dTop {
+   /* display: none; */
+   width: 100%;
+}
+.theThree {
+   display: flex;
+   gap: 0.7rem;
+}
